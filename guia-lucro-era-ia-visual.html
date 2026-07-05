@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#151007">
+<meta name="description" content="Guia visual para advogados e prestadores de serviços encontrarem lucro na Era da IA usando margem por tarefa, agentes, unit economics e escala segura.">
+<meta name="color-scheme" content="dark">
+<title>Lucro AI-Native: Margem Real, Agentes e Escala Segura | Super Inteligênc[IA]</title>
+  <meta name="twitter:image" content="og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="og-image.png">
+  <meta property="og:description" content="Guia visual para advogados e prestadores de serviços encontrarem lucro na Era da IA usando margem por tarefa, agentes, unit economics e escala segura.">
+  <meta property="og:title" content="Lucro AI-Native: Margem Real, Agentes e Escala Segura | Super Inteligênc[IA]">
+<link rel="icon" type="image/png" href="favicon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800;900&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:oklch(13% .018 78);--bg2:oklch(17% .02 78);--surface:oklch(21% .018 78/.72);--surface2:oklch(25% .018 78/.62);--ink:oklch(94% .02 82);--body:oklch(82% .025 82/.86);--muted:oklch(71% .025 82/.62);--line:oklch(80% .055 84/.14);--line2:oklch(80% .055 84/.26);--gold:oklch(78% .11 82);--gold2:oklch(70% .105 82);--green:oklch(82% .14 180);--blue:oklch(78% .1 240);--purple:oklch(78% .105 305);--orange:oklch(78% .13 58);--yellow:oklch(86% .13 92);--red:oklch(75% .14 25);--shadow:0 28px 80px oklch(8% .02 78/.44);--ease:cubic-bezier(.22,1,.36,1);--f-d:'Sora',sans-serif;--f-b:'DM Sans',sans-serif;--f-m:'JetBrains Mono',monospace;--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-6:24px;--space-8:32px;--space-12:48px;--space-16:64px;--space-24:96px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;color-scheme:dark}body{margin:0;background:var(--bg);color:var(--body);font-family:var(--f-b);font-size:16px;line-height:1.68;overflow-x:clip;-webkit-tap-highlight-color:oklch(78% .11 82/.18);text-rendering:optimizeLegibility}body::before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(900px 500px at 8% 8%,oklch(78% .11 82/.11),transparent 62%),radial-gradient(720px 440px at 95% 25%,oklch(82% .14 180/.07),transparent 68%),radial-gradient(620px 480px at 55% 100%,oklch(78% .105 305/.07),transparent 66%);z-index:-2}body::after{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(oklch(94% .02 82/.025) 1px,transparent 1px),linear-gradient(90deg,oklch(94% .02 82/.02) 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(to bottom,#000,transparent 82%);z-index:-1}.wrap{width:min(1140px,calc(100% - clamp(28px,6vw,76px)));margin-inline:auto}.gold{color:var(--gold)}a{color:var(--gold);text-decoration:none}p{margin:0 0 var(--space-4);max-width:76ch}strong,b{color:var(--ink)}:target,:focus{scroll-margin-top:86px}*:focus-visible{outline:2px solid var(--gold);outline-offset:4px;border-radius:10px}.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.skip-link{position:fixed;left:14px;top:14px;z-index:9999;transform:translateY(-140%);background:var(--gold);color:var(--bg);font-family:var(--f-d);font-weight:800;padding:10px 14px;border-radius:999px}.skip-link:focus{transform:translateY(0)}#prog{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--green),var(--gold),var(--purple),var(--orange));z-index:9999}.noise{position:fixed;inset:0;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");z-index:-1}.nav{position:sticky;top:0;z-index:900;background:oklch(13% .018 78/.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav-inner{height:66px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:12px;color:var(--ink);font-family:var(--f-d);font-weight:900;letter-spacing:-.02em}.brand img{width:34px;height:34px;border-radius:9px}.nav-links{display:flex;align-items:center;gap:8px}.nav-links a{font-family:var(--f-m);font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:8px 10px;border-radius:999px}.nav-links a:hover,.nav-links a:focus-visible{color:var(--ink);background:oklch(94% .02 82/.055)}.nav-cta,.primary-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;border-radius:999px;border:1px solid oklch(78% .11 82/.46);background:var(--gold);color:var(--bg);font-family:var(--f-d);font-size:13px;font-weight:900;padding:11px 18px;box-shadow:0 10px 26px oklch(78% .11 82/.18);cursor:pointer;transition:transform .22s var(--ease),box-shadow .22s var(--ease),background-color .22s var(--ease),border-color .22s var(--ease)}.nav-cta:hover,.primary-btn:hover{transform:translateY(-2px);box-shadow:0 16px 34px oklch(78% .11 82/.25)}.hero{padding:clamp(54px,9vw,112px) 0 clamp(34px,6vw,68px)}.hero-grid{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(360px,.82fr);gap:clamp(28px,5vw,60px);align-items:center}.badge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line2);border-radius:999px;background:oklch(94% .02 82/.04);padding:7px 13px;color:var(--gold);font-family:var(--f-m);font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin-bottom:18px}.badge::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 14px var(--gold)}.hero h1{max-width:15.8ch;margin:0;color:var(--ink);font-family:var(--f-d);font-size:clamp(40px,6.4vw,78px);line-height:.96;letter-spacing:-.062em;text-wrap:balance}.hero h1 span{color:var(--gold)}.hero h1 .line{display:block}.hero h1 small{display:block;margin-top:.2em;max-width:28ch;color:var(--body);font-size:clamp(18px,2.25vw,29px);line-height:1.18;letter-spacing:-.035em;font-weight:800}.hero-sub{margin-top:22px;color:var(--body);font-size:clamp(17px,2.1vw,21px);line-height:1.55;max-width:66ch}.hero-meta{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}.hero-meta span,.toc-pill{border:1px solid var(--line);background:oklch(94% .02 82/.035);border-radius:999px;padding:8px 12px;color:var(--muted);font-family:var(--f-m);font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.hero-visual{position:relative}.money-map{border:1px solid var(--line2);border-radius:30px;padding:22px;background:linear-gradient(180deg,oklch(94% .02 82/.06),oklch(94% .02 82/.025));box-shadow:var(--shadow)}.map-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}.map-top strong{font-family:var(--f-d);font-size:18px}.map-top span{font-family:var(--f-m);font-size:10px;color:var(--gold);font-weight:800;letter-spacing:.14em;text-transform:uppercase}.map-row{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center}.map-card{min-height:104px;border:1px solid var(--line);border-radius:20px;background:oklch(94% .02 82/.035);padding:15px}.map-card small{display:block;color:var(--muted);font-family:var(--f-m);font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}.map-card b{font-family:var(--f-d);font-size:22px}.map-card p{font-size:13px;color:var(--muted);margin:5px 0 0}.map-card.good{border-color:oklch(82% .14 180/.35)}.map-card.bad{border-color:oklch(75% .14 25/.34)}.map-arrow{font-family:var(--f-d);color:var(--gold);font-size:28px}.map-stack{display:grid;gap:10px;margin-top:10px}.map-pill{border:1px solid var(--line);border-radius:16px;padding:12px 14px;display:flex;justify-content:space-between;gap:12px;color:var(--body);background:oklch(94% .02 82/.025)}.map-pill b{font-family:var(--f-d)}.toc-section{padding:0 0 26px}.toc-head{text-align:center;margin-bottom:15px}.toc-head span{font-family:var(--f-m);font-size:10px;color:var(--gold);font-weight:800;letter-spacing:.18em;text-transform:uppercase}.toc-cloud{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}.toc-pill{display:inline-flex;align-items:center;gap:8px;cursor:pointer}.toc-pill:hover{border-color:var(--gold);color:var(--ink);transform:translateY(-1px)}.toc-pill b{color:var(--gold)}.toc-controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:12px}.toc-controls button{cursor:pointer}.guide-scene{padding:0}.scene-card{position:relative;margin:0 0 22px;border:1px solid var(--line);border-radius:26px;background:linear-gradient(180deg,oklch(94% .02 82/.048),oklch(94% .02 82/.018));box-shadow:0 18px 46px oklch(8% .02 78/.2);overflow:hidden;transition:border-color .28s var(--ease),box-shadow .28s var(--ease),transform .28s var(--ease)}.scene-card:hover{border-color:var(--line2)}.scene-card[open]{border-color:color-mix(in oklab,var(--scene-color,var(--gold)) 46%,transparent);box-shadow:0 24px 72px oklch(8% .02 78/.32)}.scene-card::before{content:"";position:absolute;inset:0 0 auto;height:4px;background:var(--scene-color,var(--gold));opacity:0;transition:opacity .28s var(--ease)}.scene-card[open]::before{opacity:.82}.cc-1{--scene-color:var(--green)}.cc-2{--scene-color:var(--blue)}.cc-3{--scene-color:var(--purple)}.cc-4{--scene-color:var(--orange)}.cc-5{--scene-color:var(--yellow)}.cc-6{--scene-color:var(--gold)}.scene-summary{list-style:none;cursor:pointer;display:flex;align-items:flex-start;gap:18px;padding:clamp(18px,3vw,32px);min-height:44px}.scene-summary::-webkit-details-marker{display:none}.scene-circle{flex:0 0 auto;width:58px;height:58px;border-radius:18px;display:inline-flex;align-items:center;justify-content:center;border:1px solid color-mix(in oklab,var(--scene-color) 48%,transparent);background:color-mix(in oklab,var(--scene-color) 12%,transparent);color:var(--scene-color);font-family:var(--f-d);font-weight:900;font-size:18px}.scene-copy{min-width:0;flex:1;display:flex;flex-direction:column;gap:8px}.scene-eyebrow{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.eyebrow-tag,.scene-readtime{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:8px;padding:4px 9px;font-family:var(--f-m);font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--scene-color);background:color-mix(in oklab,var(--scene-color) 8%,transparent)}.scene-readtime{color:var(--muted);background:oklch(94% .02 82/.025)}.scene-readtime svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:2}.scene-title{margin:0;color:var(--ink);font-family:var(--f-d);font-size:clamp(21px,3.1vw,32px);line-height:1.15;letter-spacing:-.03em;text-wrap:balance}.scene-tagline{display:block;max-width:78ch;color:var(--body);font-size:15px}.scene-glance{display:flex;flex-wrap:wrap;gap:7px;margin-top:5px}.glance-pill{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:999px;padding:6px 11px;font-family:var(--f-m);font-size:11px;color:var(--body);background:oklch(94% .02 82/.026)}.glance-pill::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--scene-color);box-shadow:0 0 9px var(--scene-color)}.scene-toggle-label{align-self:center;color:var(--muted);font-family:var(--f-m);font-size:10px;letter-spacing:.1em;text-transform:uppercase}.scene-toggle{align-self:center;display:inline-flex;width:44px;height:44px;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:50%;background:oklch(94% .02 82/.03);color:var(--scene-color);transition:transform .28s var(--ease),background-color .28s var(--ease),border-color .28s var(--ease)}.scene-toggle svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}.scene-card[open] .scene-toggle{transform:rotate(180deg);background:color-mix(in oklab,var(--scene-color) 10%,transparent);border-color:color-mix(in oklab,var(--scene-color) 46%,transparent)}.scene-body{border-top:1px solid var(--line);padding:clamp(20px,3vw,34px);animation:fadeIn .4s var(--ease)}@keyframes fadeIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}.scene-lead{max-width:76ch;font-size:17px;color:var(--ink);line-height:1.6;margin-bottom:24px}.reveal{opacity:0;transform:translateY(26px);transition:opacity .65s var(--ease),transform .65s var(--ease)}.reveal.visible{opacity:1;transform:translateY(0)}.flow-panel{margin:22px 0 26px;border:1px solid var(--line2);border-radius:24px;background:linear-gradient(180deg,oklch(94% .02 82/.052),oklch(94% .02 82/.02));padding:clamp(18px,3vw,28px);overflow:hidden}.flow-panel-head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:18px}.flow-panel-head span{font-family:var(--f-m);font-size:10px;color:var(--gold);font-weight:800;letter-spacing:.16em;text-transform:uppercase}.flow-panel-head strong{font-family:var(--f-d);font-size:clamp(17px,2.1vw,21px);line-height:1.25;text-align:right;max-width:560px}.flow-chain{display:grid;grid-template-columns:repeat(var(--steps),minmax(0,1fr));gap:12px;position:relative}.flow-step{position:relative;min-height:154px;border:1px solid var(--line);border-radius:20px;padding:15px;background:oklch(94% .02 82/.032);display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}.flow-step::before{content:"";position:absolute;inset:0 0 auto;height:3px;background:var(--step-color,var(--line2));opacity:.9}.flow-step:not(:last-child)::after{content:"";position:absolute;right:-11px;top:50%;width:20px;height:2px;background:var(--gold);z-index:2}.flow-index{font-family:var(--f-d);font-size:22px;font-weight:900;color:var(--step-color,var(--gold));line-height:1}.flow-step small{font-family:var(--f-m);font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}.flow-step strong{font-family:var(--f-d);font-size:18px;line-height:1.2}.flow-step p{font-size:13px;line-height:1.45;color:var(--muted);margin:0}.flow-step.income{--step-color:var(--green)}.flow-step.warn{--step-color:var(--orange)}.flow-step.danger{--step-color:var(--red)}.flow-step.gold{--step-color:var(--gold)}.flow-step.neutral{--step-color:var(--blue)}.compact-flow .flow-step{min-height:138px}.insight-row,.split-block,.final-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0}.split-block{grid-template-columns:1fr 1fr}.insight-row article,.split-block article,.final-grid article{border:1px solid var(--line);border-radius:20px;background:oklch(94% .02 82/.028);padding:18px}.insight-row span{display:block;margin-bottom:7px;color:var(--gold);font-family:var(--f-m);font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.insight-row b,.split-block h3,.final-grid h3{display:block;font-family:var(--f-d);font-size:17px;margin:0 0 7px}.insight-row p,.split-block p,.final-grid p{font-size:14px;color:var(--muted);margin:0}.editorial-card{margin:24px 0;border:1px solid oklch(78% .11 82/.26);border-radius:22px;background:#f2eadc;color:#1f1a13;padding:clamp(24px,4vw,42px);font-family:Georgia,serif;font-style:italic;font-size:clamp(23px,3vw,34px);line-height:1.28}.editorial-card p{margin:0;color:#1f1a13}.leak-board{display:grid;grid-template-columns:repeat(7,minmax(132px,1fr));gap:10px;margin:22px 0;overflow-x:auto;scrollbar-width:thin;padding-bottom:2px}.leak-board article{min-height:156px;border:1px solid var(--line);border-radius:20px;background:oklch(94% .02 82/.03);padding:15px;display:flex;flex-direction:column;gap:8px}.leak-board b{font-family:var(--f-d);color:var(--orange);font-size:25px}.leak-board strong{font-family:var(--f-d);font-size:15px;line-height:1.2}.leak-board p{font-size:13px;color:var(--muted);margin:0}.review-panel{border:1px solid var(--line);border-radius:20px;background:oklch(94% .02 82/.028);padding:18px;margin-top:20px}.review-head{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:8px}.review-head strong{font-family:var(--f-d)}.review-head span{font-family:var(--f-m);font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}.review-row{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid oklch(94% .02 82/.055)}.review-row:last-child{border-bottom:0}.status{width:10px;height:10px;border-radius:50%;margin-top:8px;flex:0 0 auto}.status.fail{background:var(--red);box-shadow:0 0 12px var(--red)}.status.warn{background:var(--yellow);box-shadow:0 0 12px var(--yellow)}.status.ok{background:var(--green);box-shadow:0 0 12px var(--green)}.review-row p{margin:0;font-size:14px}.tool-wrap{margin:22px 0;border:1px solid var(--line2);border-radius:24px;background:oklch(94% .02 82/.035);padding:clamp(18px,3vw,28px)}.tool-head h3,.check-tool h3{margin:0 0 6px;color:var(--ink);font-family:var(--f-d);font-size:22px}.tool-head p,.check-tool p{color:var(--muted);font-size:14px}.field-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}.field-grid label{display:flex;flex-direction:column;gap:7px;color:var(--gold);font-family:var(--f-m);font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.field-grid input{min-height:46px;border:1px solid var(--line);border-radius:14px;background:oklch(12% .018 78/.72);color:var(--ink);padding:12px 13px;font:500 15px var(--f-b);font-variant-numeric:tabular-nums}.field-grid input::placeholder{color:oklch(71% .025 82/.42)}.field-grid input:focus{border-color:var(--gold)}.tool-submit{grid-column:1/-1;justify-self:start}.form-error{border:1px solid oklch(75% .14 25/.38);border-radius:14px;padding:12px 14px;background:oklch(75% .14 25/.08);color:var(--ink);margin:8px 0}.result-panel{margin-top:18px;border:1px solid var(--line);border-radius:20px;padding:18px;background:oklch(12% .018 78/.45)}.result-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.result-grid article{border:1px solid var(--line);border-radius:18px;padding:16px;text-align:center;background:oklch(94% .02 82/.025)}.result-grid small{display:block;font-family:var(--f-m);font-size:9px;color:var(--muted);font-weight:800;letter-spacing:.1em;text-transform:uppercase}.result-grid b{display:block;margin-top:6px;font-family:var(--f-d);font-size:clamp(19px,2.5vw,28px);font-variant-numeric:tabular-nums}.decision-strip{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:18px 0}.decision-strip span{border:1px solid var(--line);border-radius:999px;padding:8px 12px;font-family:var(--f-m);font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}.offer-ladder{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:22px 0}.offer-ladder article{min-height:230px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(180deg,oklch(94% .02 82/.046),oklch(94% .02 82/.018));padding:18px;display:flex;flex-direction:column;justify-content:space-between}.offer-ladder small{font-family:var(--f-d);font-size:32px;color:var(--gold);font-weight:900}.offer-ladder b{font-family:var(--f-d);font-size:22px}.offer-ladder p{font-size:14px;color:var(--muted)}.offer-ladder span{border:1px solid var(--line);border-radius:999px;padding:7px 10px;color:var(--gold);font-family:var(--f-m);font-size:10px;text-align:center;text-transform:uppercase}.swimlane{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line2);border-radius:24px;overflow:hidden;margin:22px 0;background:oklch(94% .02 82/.025)}.swimlane>*{padding:14px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);min-height:64px}.swimlane>*:nth-child(4n){border-right:0}.swimlane>*:nth-last-child(-n+4){border-bottom:0}.lane-head{font-family:var(--f-d);font-weight:800;color:var(--gold);background:oklch(78% .11 82/.08)}.visual-note{border:1px solid var(--line2);border-radius:18px;padding:16px 18px;background:oklch(82% .14 180/.055);margin:22px 0}.compare-architecture{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:22px 0}.compare-architecture article{border:1px solid var(--line);border-radius:24px;padding:24px;text-align:center;background:oklch(94% .02 82/.028)}.compare-architecture .fragile{border-color:oklch(75% .14 25/.25)}.compare-architecture .secure{border-color:oklch(78% .11 82/.36)}.compare-architecture h3{font-family:var(--f-d);font-size:24px;margin:0 0 18px}.tower{width:100px;height:150px;margin:0 auto 18px;display:flex;flex-direction:column;justify-content:flex-end;gap:4px}.tower span{height:32px;border:2px solid currentColor;border-radius:4px;background:currentColor;color:oklch(94% .02 82/.08)}.cracked{color:var(--red)}.cracked span:nth-child(1){transform:translateX(-5px) rotate(-3deg)}.cracked span:nth-child(2){transform:translateX(4px) rotate(2deg)}.cracked span:nth-child(3){transform:translateX(-2px) rotate(-1deg)}.stable{color:var(--gold)}.stable span{position:relative}.stable span::after{content:"";position:absolute;inset:50% 0 auto;height:1px;background:oklch(78% .11 82/.42)}.question-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}.question-grid article{border:1px solid var(--line);border-radius:18px;padding:16px;background:oklch(94% .02 82/.03)}.question-grid b{display:block;color:var(--gold);font-family:var(--f-d);font-size:21px}.question-grid p{margin:8px 0 0;font-family:var(--f-d);font-size:15px;color:var(--ink)}.subtle-cta{margin-top:24px;border:1px solid oklch(78% .11 82/.28);border-radius:24px;background:oklch(78% .11 82/.06);padding:22px;display:flex;align-items:center;justify-content:space-between;gap:20px}.subtle-cta span{font-family:var(--f-m);font-size:10px;color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:.14em}.subtle-cta strong{display:block;font-family:var(--f-d);font-size:24px;margin:5px 0}.secondary-link{display:inline-flex;min-height:44px;align-items:center;justify-content:center;border:1px solid var(--gold);border-radius:999px;padding:11px 16px;color:var(--gold);font-family:var(--f-d);font-weight:800;white-space:nowrap}.secondary-link:hover{background:oklch(78% .11 82/.1);color:var(--ink)}.loop-visual{position:relative;width:min(480px,100%);aspect-ratio:1;margin:22px auto 30px;border:1px solid var(--line2);border-radius:50%;background:radial-gradient(circle at 50% 50%,oklch(78% .11 82/.12),transparent 36%),oklch(94% .02 82/.025)}.loop-visual article{position:absolute;left:50%;top:50%;width:112px;min-height:80px;transform:rotate(var(--a)) translate(165px) rotate(calc(-1 * var(--a))) translate(-50%,-50%);border:1px solid var(--line);border-radius:18px;background:var(--bg2);padding:10px;text-align:center}.loop-visual b{display:block;color:var(--gold);font-family:var(--f-d)}.loop-visual span{font-family:var(--f-d);font-weight:800;color:var(--ink)}.loop-core{position:absolute;inset:50% auto auto 50%;transform:translate(-50%,-50%);font-family:var(--f-d);font-weight:900;color:var(--gold);text-align:center;text-transform:uppercase;letter-spacing:.08em}.check-tool{border:1px solid var(--line2);border-radius:24px;background:oklch(94% .02 82/.035);padding:22px;margin:22px 0}.check-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:18px 0}.check-list label{display:flex;align-items:flex-start;gap:10px;border:1px solid var(--line);border-radius:16px;padding:12px;cursor:pointer;background:oklch(94% .02 82/.025)}.check-list input{margin-top:3px;accent-color:var(--gold);width:18px;height:18px}.check-list span{font-size:14px;color:var(--body)}.check-meter{height:10px;border-radius:999px;background:oklch(94% .02 82/.08);overflow:hidden}.check-meter span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--orange),var(--gold),var(--green));transition:width .32s var(--ease)}.meter-text{margin-top:10px;color:var(--muted)}.timeline-grid{display:grid;grid-template-columns:repeat(7,minmax(126px,1fr));gap:10px;margin:22px 0;overflow-x:auto;padding-bottom:2px}.timeline-grid article{min-height:180px;border:1px solid var(--line);border-radius:20px;background:oklch(94% .02 82/.03);padding:15px}.timeline-grid small{display:block;color:var(--gold);font-family:var(--f-m);font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.timeline-grid b{display:block;margin:10px 0 8px;font-family:var(--f-d);font-size:18px}.timeline-grid p{font-size:13px;color:var(--muted);margin:0}.manifest-block{text-align:center;margin:32px 0 6px;padding:clamp(34px,6vw,68px) 20px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:linear-gradient(180deg,transparent,oklch(78% .11 82/.08),transparent)}.manifest-block p{margin:0 auto 8px;color:var(--muted);font-family:Georgia,serif;font-style:italic;font-size:clamp(18px,2vw,22px)}.manifest-block strong{display:block;font-family:var(--f-d);font-size:clamp(30px,5vw,58px);line-height:1.02;letter-spacing:-.05em}.manifest-block em{display:block;margin-top:10px;color:var(--gold);font-family:Georgia,serif;font-size:clamp(22px,3vw,34px);font-style:italic}.faq-section{padding:clamp(34px,7vw,72px) 0 0}.faq-title{font-family:var(--f-d);font-size:clamp(30px,5vw,56px);line-height:1;color:var(--ink);letter-spacing:-.05em;margin:0 0 22px}.faq-item{border:1px solid var(--line);border-radius:18px;margin-bottom:10px;background:oklch(94% .02 82/.028);overflow:hidden}.faq-q{width:100%;min-height:56px;border:0;background:transparent;color:var(--ink);display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 18px;font-family:var(--f-d);font-size:16px;font-weight:800;text-align:left;cursor:pointer}.faq-q svg{width:18px;height:18px;fill:none;stroke:var(--gold);stroke-width:2;transition:transform .22s var(--ease)}.faq-item.open .faq-q svg{transform:rotate(180deg)}.faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .28s var(--ease)}.faq-item.open .faq-a{grid-template-rows:1fr}.faq-a>div{overflow:hidden}.faq-a p{padding:0 18px 18px;margin:0;color:var(--body)}.cta-final{text-align:center;padding:clamp(54px,9vw,110px) 0}.cta-box{border:1px solid oklch(78% .11 82/.3);background:radial-gradient(600px 260px at 50% 0,oklch(78% .11 82/.13),transparent 70%),oklch(94% .02 82/.03);border-radius:32px;padding:clamp(34px,6vw,76px);box-shadow:var(--shadow)}.cta-box h2{font-family:var(--f-d);font-size:clamp(34px,6vw,68px);line-height:.98;letter-spacing:-.055em;color:var(--ink);text-wrap:balance;margin:0 0 18px}.cta-box p{max-width:68ch;margin:0 auto 24px;color:var(--body)}.expert-section{padding:20px 0 48px}.expert-card{display:grid;grid-template-columns:180px 1fr;gap:28px;align-items:start;border:1px solid var(--line);border-radius:26px;background:oklch(94% .02 82/.028);padding:24px}.expert-photo{width:180px;height:180px;border-radius:18px;border:1px solid oklch(78% .11 82/.34);background-size:cover;background-position:center}.expert-info h2{font-family:var(--f-d);font-size:28px;margin:0 0 8px;color:var(--ink)}.expert-info p{color:var(--body)}.tags,.stats{display:flex;gap:8px;flex-wrap:wrap}.tags span,.stats span{border:1px solid var(--line);border-radius:999px;padding:7px 10px;font-family:var(--f-m);font-size:10px;color:var(--muted)}.stats span{color:var(--gold);background:oklch(78% .11 82/.06)}.footer{border-top:1px solid var(--line);padding:28px 0 40px;text-align:center;color:var(--muted);font-family:var(--f-m);font-size:11px}.footer-social,.footer-legal{display:flex;justify-content:center;gap:8px 14px;flex-wrap:wrap;margin-bottom:12px}.footer a{color:var(--muted)}.footer a:hover{color:var(--gold)}.footer-sep{color:var(--line2)}.scroll-top{position:fixed;right:18px;bottom:18px;z-index:800;width:46px;height:46px;border-radius:50%;border:1px solid var(--line2);background:oklch(18% .018 78/.92);color:var(--gold);display:none;align-items:center;justify-content:center;cursor:pointer}.scroll-top.show{display:flex}.scroll-top svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2}.toast{position:fixed;left:50%;bottom:22px;z-index:1000;transform:translate(-50%,120px);opacity:0;transition:transform .35s var(--ease),opacity .35s var(--ease);border:1px solid var(--line2);background:oklch(18% .018 78/.94);border-radius:999px;padding:12px 16px;color:var(--ink);box-shadow:var(--shadow);font-family:var(--f-d);font-size:13px}.toast.show{transform:translate(-50%,0);opacity:1}.exit-overlay{position:fixed;inset:0;z-index:9998;background:oklch(8% .02 78/.78);backdrop-filter:blur(12px);display:none;align-items:center;justify-content:center;padding:20px;overscroll-behavior:contain}.exit-overlay.active{display:flex}.exit-modal{position:relative;width:min(460px,100%);border:1px solid oklch(78% .11 82/.32);border-radius:28px;background:var(--bg2);box-shadow:var(--shadow);padding:30px;text-align:center}.exit-modal h2{font-family:var(--f-d);color:var(--ink);margin:0 0 10px}.modal-close{position:absolute;top:12px;right:12px;width:44px;height:44px;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--muted);font-size:24px;cursor:pointer}.modal-close:hover{color:var(--ink);border-color:var(--gold)}
+@media(max-width:1200px){.flow-chain{grid-template-columns:repeat(3,1fr)}.flow-step:nth-child(3n)::after{display:none}.timeline-grid{grid-template-columns:repeat(4,minmax(140px,1fr))}.leak-board{grid-template-columns:repeat(4,minmax(150px,1fr));overflow:visible}.loop-visual article{transform:rotate(var(--a)) translate(142px) rotate(calc(-1 * var(--a))) translate(-50%,-50%)}}
+@media(max-width:1024px){.hero-grid{grid-template-columns:1fr}.hero h1{max-width:12ch}.hero-visual{max-width:720px}.field-grid,.offer-ladder,.question-grid{grid-template-columns:repeat(2,1fr)}.swimlane{grid-template-columns:1fr 1fr}.swimlane>*{border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.swimlane>*:nth-child(2n){border-right:0}.swimlane>*:nth-last-child(-n+2){border-bottom:0}.result-grid{grid-template-columns:repeat(2,1fr)}.flow-chain{grid-template-columns:1fr}.flow-step{min-height:auto}.flow-step:not(:last-child)::after{display:block;right:auto;left:50%;top:auto;bottom:-14px;width:2px;height:24px;transform:translateX(-50%);background:linear-gradient(var(--gold),transparent)}.compare-architecture,.split-block,.insight-row,.final-grid{grid-template-columns:1fr}.loop-visual{width:min(420px,100%)}}
+@media(max-width:820px){.nav-links{display:none}.scene-summary{gap:12px}.scene-circle{width:48px;height:48px;border-radius:15px;font-size:15px}.scene-toggle-label{display:none}.scene-toggle{width:38px;height:38px}.flow-panel-head{flex-direction:column}.flow-panel-head strong{text-align:left}.check-list,.field-grid,.offer-ladder,.question-grid,.result-grid,.expert-card{grid-template-columns:1fr}.expert-card{text-align:center}.expert-photo{margin:auto}.tags,.stats{justify-content:center}.subtle-cta{flex-direction:column;align-items:flex-start}.timeline-grid{grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible}.leak-board{grid-template-columns:repeat(2,minmax(0,1fr))}.loop-visual{aspect-ratio:auto;border-radius:24px;padding:18px;display:grid;gap:10px}.loop-visual article{position:static;transform:none;width:auto;min-height:auto}.loop-core{position:static;transform:none;order:-1;padding:14px;border:1px solid var(--line);border-radius:16px;background:oklch(78% .11 82/.08)}}
+@media(max-width:640px){body{font-size:15px}.wrap{width:min(100% - 28px,1140px)}.nav-inner{height:58px}.brand span{display:none}.hero{padding-top:48px}.hero h1{font-size:clamp(32px,10.5vw,52px);max-width:13.4ch}.hero h1 small{font-size:clamp(15px,5.4vw,24px);max-width:23ch}.hero-sub{font-size:16px}.badge{font-size:9px}.map-row{grid-template-columns:1fr}.map-arrow{transform:rotate(90deg);text-align:center}.scene-summary{padding:16px 14px;align-items:center}.scene-body{padding:18px 14px}.scene-title{font-size:20px}.scene-tagline{font-size:13px}.scene-glance{gap:6px}.glance-pill{font-size:9.5px}.scene-toggle{display:none}.leak-board,.timeline-grid{grid-template-columns:1fr}.primary-btn,.nav-cta,.secondary-link{width:100%}.toc-pill{width:100%;justify-content:center}.swimlane{grid-template-columns:1fr}.swimlane>*{border-right:0!important}.expert-photo{width:132px;height:132px}.toast{width:calc(100% - 32px);border-radius:18px;text-align:center}.footer-legal{gap:6px 10px}.footer-sep{display:none}.cta-box{border-radius:24px}}
+@media(max-width:380px){.wrap{width:min(100% - 22px,1140px)}.scene-circle{width:40px;height:40px;font-size:13px;border-radius:12px}.scene-summary{gap:9px}.hero h1{font-size:31px}.hero h1 small{font-size:16px}.badge{letter-spacing:.1em}.map-card b{font-size:19px}.flow-panel{padding:14px;border-radius:18px}.flow-step{border-radius:16px}.timeline-grid article,.leak-board article{min-height:auto}.cta-box h2{font-size:31px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+@media print{.nav,#prog,.noise,.toast,.exit-overlay,.scroll-top,.toc-section{display:none!important}body{background:#fff;color:#111}.scene-card,.tool-wrap,.flow-panel{break-inside:avoid;border-color:#ddd;background:#fff}.scene-body{display:block}.gold{color:#9a6b00}.wrap{width:100%}}
+
+/* SI mobile containment patch */
+@media(max-width:600px){
+  html,body{max-width:100%;overflow-x:hidden}
+  .hero-mesh{overflow:hidden;clip-path:inset(0)}
+  .hero-mesh .blob{animation:none!important;transform:none!important;filter:blur(52px);max-width:62vw;max-height:62vw}
+  .blob-1{left:-24vw!important;width:62vw!important;height:62vw!important}
+  .blob-2{right:-26vw!important;width:56vw!important;height:56vw!important}
+  .blob-3{left:24vw!important;right:auto!important;width:52vw!important;height:52vw!important}
+  .table-wrap{max-width:100%;overflow-x:auto;contain:layout paint}
+  .table-wrap table{width:100%;table-layout:fixed;min-width:0}
+  .table-wrap th,.table-wrap td{white-space:normal;padding:9px 8px;overflow-wrap:anywhere;word-break:normal}
+  .table-wrap .pill{white-space:normal;line-height:1.25}
+}
+</style>
+  <!-- SI mandatory assets -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">  <!-- /SI mandatory assets -->
+<style id="si-ai-agentic-style">
+.si-agentic-upgrade{position:relative;z-index:2;margin:clamp(26px,5vw,54px) auto;max-width:1120px;width:min(100% - 32px,1120px);border:1px solid rgba(226,192,116,.22);border-radius:8px;background:linear-gradient(135deg,rgba(11,13,18,.96),rgba(28,24,15,.94));box-shadow:0 24px 80px rgba(0,0,0,.34);overflow:hidden}
+.si-agentic-upgrade:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(226,192,116,.16),transparent 34%,rgba(83,191,178,.09));pointer-events:none}
+.si-agentic-inner{position:relative;padding:clamp(24px,4.6vw,46px)}
+.si-agentic-kicker{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;padding:7px 11px;border-radius:999px;border:1px solid rgba(226,192,116,.25);background:rgba(226,192,116,.08);font:800 10px/1.2 "JetBrains Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:#e8c878}
+.si-agentic-upgrade h2{margin:0 0 12px;font-family:"Sora","DM Sans",sans-serif;font-size:clamp(24px,4vw,42px);line-height:1.08;letter-spacing:0;color:#f7f1df;text-wrap:balance}
+.si-agentic-thesis{margin:0 0 22px;max-width:860px;color:#d8d1bf;font-size:clamp(15px,1.7vw,18px);line-height:1.7}
+.si-agentic-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:22px 0}
+.si-agentic-card{border:1px solid rgba(255,255,255,.1);border-radius:8px;background:rgba(255,255,255,.045);padding:16px;min-height:148px}
+.si-agentic-card b{display:block;margin-bottom:8px;color:#efcf78;font-family:"Sora","DM Sans",sans-serif;font-size:14px;line-height:1.3}
+.si-agentic-card span{display:block;color:#c8c1ae;font-size:13px;line-height:1.55}
+.si-agentic-proof{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.si-agentic-proof div{border:1px solid rgba(83,191,178,.18);border-radius:8px;background:rgba(83,191,178,.055);padding:15px;color:#dcd4bf;font-size:13.5px;line-height:1.55}
+.si-agentic-proof strong{color:#72d6ca}
+.si-agentic-note{margin-top:18px;color:#9f9787;font-size:12px;line-height:1.55}
+.expert-section .expert-photo{background-image:url('marcilio-especialista.png')!important;background-size:cover!important;background-position:center top!important}
+.expert-section .expert-photo img{content:url('marcilio-especialista.png');object-fit:cover!important;object-position:center top!important}
+.hero-logo,.nav-logo-mark{background-image:url('favicon-192.png')!important;background-size:cover!important;background-position:center!important}
+@media(max-width:820px){.si-agentic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.si-agentic-proof{grid-template-columns:1fr}.si-agentic-upgrade{width:min(100% - 24px,1120px)}}
+@media(max-width:520px){.si-agentic-inner{padding:22px 16px}.si-agentic-grid{grid-template-columns:1fr}.si-agentic-card{min-height:auto}.si-agentic-kicker{font-size:9px;white-space:normal;border-radius:8px}.si-agentic-proof div{font-size:13px}}
+
+/* SI mobile containment patch */
+@media(max-width:600px){
+  html,body{max-width:100%;overflow-x:hidden}
+  .hero-mesh{overflow:hidden;clip-path:inset(0)}
+  .hero-mesh .blob{animation:none!important;transform:none!important;filter:blur(52px);max-width:62vw;max-height:62vw}
+  .blob-1{left:-24vw!important;width:62vw!important;height:62vw!important}
+  .blob-2{right:-26vw!important;width:56vw!important;height:56vw!important}
+  .blob-3{left:24vw!important;right:auto!important;width:52vw!important;height:52vw!important}
+  .table-wrap{max-width:100%;overflow-x:auto;contain:layout paint}
+  .table-wrap table{width:100%;table-layout:fixed;min-width:0}
+  .table-wrap th,.table-wrap td{white-space:normal;padding:9px 8px;overflow-wrap:anywhere;word-break:normal}
+  .table-wrap .pill{white-space:normal;line-height:1.25}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a><div id="prog"></div><div class="noise" aria-hidden="true"></div>
+<nav class="nav" aria-label="Navegação principal"><div class="wrap nav-inner"><a class="brand" href="#topo" aria-label="Super Inteligênc[IA]"><img src="favicon-192.png" width="34" height="34" alt="Logo Super Inteligênc[IA]" fetchpriority="high"><span>Super Inteligênc[IA]</span></a><div class="nav-links"><a href="#cena-1">Diagnóstico</a><a href="#cena-3">Calculadora</a><a href="#cena-6">Método SI</a></div><a class="nav-cta" href="https://wa.me/message/NSPS5ULND5FNP1" target="_blank" rel="noopener">Falar agora</a></div></nav>
+<header class="hero" id="topo"><div class="wrap hero-grid"><div><span class="badge">Guia visual - lucro AI-native</span><h1>Lucro AI-Native: margem real, agentes e escala segura</h1><p class="hero-sub">Para quem quer entender onde a IA aumenta margem de verdade: não no encanto do prompt, mas na redução do custo por resultado com fluxos fechados, agentes medidos e oferta redesenhada.</p><div class="hero-meta"><span>29 min de leitura</span><span>8 cenas visuais</span><span>sem cadastro</span><span>com calculadora</span></div></div><div class="hero-visual" aria-label="Mapa visual do lucro"><div class="money-map"><div class="map-top"><span>Mapa da Era da IA</span><strong>Velocidade não é margem</strong></div><div class="map-row"><article class="map-card good"><small>O que todo mundo vê</small><b>IA + Faturamento</b><p>Mais velocidade, mais entregas, mais contratos e mais sensação de progresso.</p></article><div class="map-arrow" aria-hidden="true">→</div><article class="map-card bad"><small>O que pouca gente calcula</small><b>Margem real</b><p>Horas, retrabalho, risco, urgência, dependência e custo operacional.</p></article></div><div class="map-stack"><div class="map-pill"><span>IA sem arquitetura</span><b>acelera custo</b></div><div class="map-pill"><span>Serviço sem margem</span><b>compra prisão</b></div><div class="map-pill"><span>Arquitetura inteligente</span><b>captura lucro</b></div></div></div></div></div></header>
+<main id="conteudo">
+<section class="toc-section reveal"><div class="wrap"><div class="toc-head"><span>Mapa do guia · leitura em camadas</span></div><nav class="toc-cloud" aria-label="Navegação rápida do guia"><a class="toc-pill" href="#cena-1"><b>01</b>Conta real<span>3 min</span></a><a class="toc-pill" href="#cena-2"><b>02</b>Vazamentos<span>4 min</span></a><a class="toc-pill" href="#cena-3"><b>03</b>Margem real<span>4 min</span></a><a class="toc-pill" href="#cena-4"><b>04</b>Prateleira<span>3 min</span></a><a class="toc-pill" href="#cena-5"><b>05</b>Entrega<span>4 min</span></a><a class="toc-pill" href="#cena-6"><b>06</b>Método SI<span>5 min</span></a><a class="toc-pill" href="#cena-7"><b>07</b>Ciclo semanal<span>3 min</span></a><a class="toc-pill" href="#cena-8"><b>08</b>Plano de 7 dias<span>3 min</span></a></nav><div class="toc-controls"><button class="toc-pill" id="expandAll" type="button"><b>+</b> Expandir todas</button><button class="toc-pill" id="collapseAll" type="button"><b>−</b> Recolher todas</button></div></div></section>
+<section class="si-agentic-upgrade" id="arquitetura-agentica" aria-labelledby="agentic-title-lucro">
+  <div class="si-agentic-inner">
+    <div class="si-agentic-kicker">Unit economics de agentes</div>
+    <h2 id="agentic-title-lucro">O lucro aparece quando cada tarefa tem custo, dono e automação defensável.</h2>
+    <p class="si-agentic-thesis">A pergunta madura não é "qual IA usar?". É: qual etapa consome margem, pode virar fluxo fechado e aceita um agente com ferramenta, critério de pronto e limite de risco?</p>
+    <div class="si-agentic-grid">
+      <article class="si-agentic-card"><b>Mapa de margem</b><span>Localiza tarefas repetitivas, cognitivas e caras que drenam lucro sem aparecer no faturamento.</span></article>
+      <article class="si-agentic-card"><b>Agente de proposta</b><span>Padroniza escopo, risco, prazo e exceções para vender melhor sem prometer demais.</span></article>
+      <article class="si-agentic-card"><b>Agente de produção</b><span>Executa partes do serviço com checklist, fonte e validação antes do humano revisar.</span></article>
+      <article class="si-agentic-card"><b>Gate de margem</b><span>Promove apenas fluxos que reduzem custo por resultado sem piorar qualidade.</span></article>
+    </div>
+    <div class="si-agentic-proof">
+      <div><strong>Primeira vitoria:</strong> o leitor calcula qual serviço vende bastante, mas queima margem por retrabalho, troca de contexto e decisão mal delegada.</div>
+      <div><strong>Prova de maturidade:</strong> margem AI-native mede custo por resultado, taxa de correção, tempo humano salvo e risco evitado, não quantidade de prompts rodados.</div>
+    </div>
+    <p class="si-agentic-note">Atualizado em julho de 2026: agentes aqui significam fluxos com estado, ferramentas, handoffs, guardrails, evals e auditoria. Não é prompt solto, não é chatbot decorativo.</p>
+  </div>
+</section>
+
+<section class="guide-scene" id="cena-1">
+  <div class="wrap">
+    <details class="scene-card cc-1 reveal" open>
+      <summary class="scene-summary">
+        <div class="scene-circle">01</div>
+        <div class="scene-copy">
+          <div class="scene-eyebrow"><span class="eyebrow-tag">Cena 01 · A conta real</span><span class="scene-readtime"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>3 min</span></div>
+          <h2 class="scene-title">A verdade é simples: <span class="gold">faturar não é lucrar</span>.</h2>
+          <p class="scene-tagline">Antes de pensar em escala, veja se cada contrato compra liberdade ou apenas aumenta a sua prisão operacional.</p>
+          <div class="scene-glance"><span class="glance-pill">Mapa do dinheiro</span><span class="glance-pill">Margem real</span><span class="glance-pill">Decisão sênior</span></div>
+        </div>
+        <span class="scene-toggle-label">Expandir</span>
+        <span class="scene-toggle"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span>
+      </summary>
+      <div class="scene-body">
+        
+<p class="scene-lead">O erro mais caro de um negócio de serviços é comemorar entrada de dinheiro antes de saber se aquele contrato preserva margem, energia e capacidade.</p>
+<div class="flow-panel " role="group" aria-label="Fluxo visual">
+      <div class="flow-panel-head">
+        <span>Fluxo visual</span>
+        <strong>O caminho do dinheiro até virar lucro</strong>
+      </div>
+      <div class="flow-chain" style="--steps:6">
+        <article class="flow-step income">
+          <span class="flow-index">01</span>
+          <small>Entrada</small>
+          <strong>Faturamento</strong>
+          <p>O valor aparece no caixa. Ainda não é lucro.</p>
+        </article><article class="flow-step neutral">
+          <span class="flow-index">02</span>
+          <small>Atrito</small>
+          <strong>Custos</strong>
+          <p>Equipe, ferramentas, mídia, impostos e estrutura.</p>
+        </article><article class="flow-step warn">
+          <span class="flow-index">03</span>
+          <small>Consumo</small>
+          <strong>Horas</strong>
+          <p>Tempo real de entrega e coordenação.</p>
+        </article><article class="flow-step danger">
+          <span class="flow-index">04</span>
+          <small>Vazamento</small>
+          <strong>Retrabalho</strong>
+          <p>Urgências, exceções, ajustes e ruído de escopo.</p>
+        </article><article class="flow-step danger">
+          <span class="flow-index">05</span>
+          <small>Decisão</small>
+          <strong>Risco</strong>
+          <p>Exposição financeira, reputacional ou jurídica.</p>
+        </article><article class="flow-step gold">
+          <span class="flow-index">06</span>
+          <small>Resultado</small>
+          <strong>Margem real</strong>
+          <p>O que sobra depois de tudo que o serviço exigiu.</p>
+        </article>
+      </div>
+    </div>
+<div class="insight-row">
+  <article><span>Olhar amador</span><b>Quanto entrou?</b><p>O negócio parece saudável quando há novos contratos.</p></article>
+  <article><span>Olhar empresarial</span><b>Quanto ficou?</b><p>O contrato só é bom se paga a operação e ainda compra liberdade.</p></article>
+  <article><span>Olhar SI</span><b>O que esse contrato cria?</b><p>Margem, processo, dado, prova e capacidade para escalar sem improviso.</p></article>
+</div>
+<div class="editorial-card"><p>Faturamento é vaidade quando a entrega não tem arquitetura.</p></div>
+
+      </div>
+    </details>
+  </div>
+</section>
+<section class="guide-scene" id="cena-2">
+  <div class="wrap">
+    <details class="scene-card cc-4 reveal" >
+      <summary class="scene-summary">
+        <div class="scene-circle">02</div>
+        <div class="scene-copy">
+          <div class="scene-eyebrow"><span class="eyebrow-tag">Cena 02 · Vazamentos invisíveis</span><span class="scene-readtime"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>4 min</span></div>
+          <h2 class="scene-title">O lucro não some de uma vez. <span class="gold">Ele vaza em etapas</span>.</h2>
+          <p class="scene-tagline">Os maiores prejuízos ficam escondidos em escopo aberto, retrabalho, urgências e dependência do fundador.</p>
+          <div class="scene-glance"><span class="glance-pill">7 vazamentos</span><span class="glance-pill">Painel de risco</span><span class="glance-pill">Correção rápida</span></div>
+        </div>
+        <span class="scene-toggle-label">Expandir</span>
+        <span class="scene-toggle"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span>
+      </summary>
+      <div class="scene-body">
+        
+<p class="scene-lead">O dinheiro raramente some em um único buraco. Ele escapa por microdecisões repetidas, invisíveis no extrato e óbvias quando o fluxo é desenhado.</p>
+<div class="leak-board" role="group" aria-label="Sete vazamentos invisíveis do lucro">
+  <article><b>01</b><strong>Serviço sem conta de horas</strong><p>O preço nasce da intuição, não do custo real.</p></article><article><b>02</b><strong>Escopo elástico</strong><p>O cliente compra uma coisa e consome várias.</p></article><article><b>03</b><strong>Cliente barato com operação premium</strong><p>Baixo ticket, alta demanda e pouca margem.</p></article><article><b>04</b><strong>Fundador no operacional</strong><p>O gargalo tem nome, agenda e limite de energia.</p></article><article><b>05</b><strong>Retrabalho normalizado</strong><p>O erro vira rotina e ninguém calcula o custo.</p></article><article><b>06</b><strong>IA em processo bagunçado</strong><p>A tecnologia acelera o caos em vez de criar padrão.</p></article><article><b>07</b><strong>Sem ritual de decisão</strong><p>O negócio repete serviços ruins por falta de revisão.</p></article>
+</div>
+<div class="flow-panel compact-flow" role="group" aria-label="Mapa de decisão">
+      <div class="flow-panel-head">
+        <span>Mapa de decisão</span>
+        <strong>Como detectar o vazamento antes de vender de novo</strong>
+      </div>
+      <div class="flow-chain" style="--steps:4">
+        <article class="flow-step warn">
+          <span class="flow-index">01</span>
+          <small>Sinal</small>
+          <strong>Cliente exige exceção</strong>
+          <p>A demanda não cabe no fluxo padrão.</p>
+        </article><article class="flow-step danger">
+          <span class="flow-index">02</span>
+          <small>Teste</small>
+          <strong>A equipe improvisa</strong>
+          <p>A entrega depende de memória e boa vontade.</p>
+        </article><article class="flow-step danger">
+          <span class="flow-index">03</span>
+          <small>Prova</small>
+          <strong>Não há métrica</strong>
+          <p>Ninguém sabe quanto custou entregar.</p>
+        </article><article class="flow-step gold">
+          <span class="flow-index">04</span>
+          <small>Ajuste</small>
+          <strong>Preço ou escopo muda</strong>
+          <p>A oferta é corrigida antes de ser repetida.</p>
+        </article>
+      </div>
+    </div>
+<div class="review-panel" aria-label="Painel de revisão dos vazamentos">
+  <div class="review-head"><strong>Leitura sênior</strong><span>o vazamento não é o problema. é o sinal.</span></div>
+  <div class="review-row"><span class="status fail"></span><p><strong>Crítico:</strong> se o serviço depende de urgência constante, o preço precisa carregar esse custo.</p></div>
+  <div class="review-row"><span class="status warn"></span><p><strong>Atenção:</strong> se o cliente compra escopo aberto, ele transforma sua equipe em suporte ilimitado.</p></div>
+  <div class="review-row"><span class="status ok"></span><p><strong>Bom sinal:</strong> quando cada etapa tem dono, padrão e critério de aceite, a margem fica visível.</p></div>
+</div>
+
+      </div>
+    </details>
+  </div>
+</section>
+<section class="guide-scene" id="cena-3">
+  <div class="wrap">
+    <details class="scene-card cc-2 reveal" >
+      <summary class="scene-summary">
+        <div class="scene-circle">03</div>
+        <div class="scene-copy">
+          <div class="scene-eyebrow"><span class="eyebrow-tag">Cena 03 · Margem real</span><span class="scene-readtime"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>4 min</span></div>
+          <h2 class="scene-title">A conta que ninguém te mostrou: <span class="gold">o serviço pode estar caro e ainda assim dar prejuízo</span>.</h2>
+          <p class="scene-tagline">A calculadora mostra a margem depois de custos, horas e retrabalho. É o primeiro filtro para decidir o que vale vender.</p>
+          <div class="scene-glance"><span class="glance-pill">Calculadora</span><span class="glance-pill">Veredito</span><span class="glance-pill">Preço com critério</span></div>
+        </div>
+        <span class="scene-toggle-label">Expandir</span>
+        <span class="scene-toggle"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span>
+      </summary>
+      <div class="scene-body">
+        
+<p class="scene-lead">A conta não precisa ser perfeita para ser útil. Ela precisa ser honesta o suficiente para revelar se o serviço merece continuar na prateleira.</p>
+<div class="flow-panel " role="group" aria-label="Fórmula visual">
+      <div class="flow-panel-head">
+        <span>Fórmula visual</span>
+        <strong>A margem aparece quando a venda passa por 5 filtros</strong>
+      </div>
+      <div class="flow-chain" style="--steps:6">
+        <article class="flow-step income">
+          <span class="flow-index">01</span>
+          <small>Preço</small>
+          <strong>Valor cobrado</strong>
+          <p>O que o cliente paga pelo serviço.</p>
+        </article><article class="flow-step neutral">
+          <span class="flow-index">02</span>
+          <small>Custo direto</small>
+          <strong>Equipe e ferramentas</strong>
+          <p>O que é consumido para entregar.</p>
+        </article><article class="flow-step warn">
+          <span class="flow-index">03</span>
+          <small>Horas</small>
+          <strong>Tempo real</strong>
+          <p>O tempo que poderia estar em outra oferta.</p>
+        </article><article class="flow-step danger">
+          <span class="flow-index">04</span>
+          <small>Retrabalho</small>
+          <strong>Exceções</strong>
+          <p>O custo que quase ninguém registra.</p>
+        </article><article class="flow-step danger">
+          <span class="flow-index">05</span>
+          <small>Risco</small>
+          <strong>Exposição</strong>
+          <p>O que precisa de blindagem ou validação humana.</p>
+        </article><article class="flow-step gold">
+          <span class="flow-index">06</span>
+          <small>Veredito</small>
+          <strong>Decisão</strong>
+          <p>Manter, corrigir, subir preço ou parar.</p>
+        </article>
+      </div>
+    </div>
+<div class="tool-wrap" aria-labelledby="calc-title">
+  <div class="tool-head"><h3 id="calc-title">Calculadora de margem real</h3><p>Use números apróximados. A função é revelar a tendência, não fazer contabilidade.</p></div>
+  <form id="marginForm" class="field-grid" novalidate>
+    <label>Preço cobrado <input id="price" name="price" type="number" inputmode="decimal" min="0" placeholder="Ex.: 5000…" autocomplete="off"></label>
+    <label>Custo direto <input id="cost" name="cost" type="number" inputmode="decimal" min="0" placeholder="Ex.: 1800…" autocomplete="off"></label>
+    <label>Horas totais <input id="hours" name="hours" type="number" inputmode="decimal" min="1" placeholder="Ex.: 22…" autocomplete="off"></label>
+    <label>Retrabalho estimado <input id="rework" name="rework" type="number" inputmode="decimal" min="0" placeholder="Ex.: 600…" autocomplete="off"></label>
+    <button class="primary-btn tool-submit" type="submit">Calcular margem</button>
+  </form>
+  <div id="calcError" class="form-error" role="alert" hidden></div>
+  <div id="marginResult" class="result-panel" aria-live="polite" hidden>
+    <div class="result-grid">
+      <article><small>Lucro estimado</small><b id="outProfit">R$ 0</b></article>
+      <article><small>Margem real</small><b id="outMargin">0%</b></article>
+      <article><small>Valor por hora</small><b id="outHour">R$ 0</b></article>
+      <article><small>Veredito</small><b id="outVerdict">-</b></article>
+    </div>
+    <p id="outAdvice"></p>
+  </div>
+</div>
+<div class="decision-strip"><span>Margem baixa</span><span>Corrigir escopo</span><span>Subir preço</span><span>Padronizar entrega</span><span>Escalar com segurança</span></div>
+
+      </div>
+    </details>
+  </div>
+</section>
+<section class="guide-scene" id="cena-4">
+  <div class="wrap">
+    <details class="scene-card cc-3 reveal" >
+      <summary class="scene-summary">
+        <div class="scene-circle">04</div>
+        <div class="scene-copy">
+          <div class="scene-eyebrow"><span class="eyebrow-tag">Cena 04 · Prateleira de ofertas</span><span class="scene-readtime"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>3 min</span></div>
+          <h2 class="scene-title">O segredo não é vender mais. <span class="gold">É vender a oferta certa no lugar certo</span>.</h2>
+          <p class="scene-tagline">Entrada, principal, premium e continuidade precisam cumprir papéis diferentes no caixa e na percepção de valor.</p>
+          <div class="scene-glance"><span class="glance-pill">Escada visual</span><span class="glance-pill">Mix de soluções</span><span class="glance-pill">Caixa previsível</span></div>
+        </div>
+        <span class="scene-toggle-label">Expandir</span>
+        <span class="scene-toggle"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span>
+      </summary>
+      <div class="scene-body">
+        
+<p class="scene-lead">Uma boa prateleira não é uma lista de serviços. É uma engenharia de entrada, caixa, margem, autoridade e continuidade.</p>
+<div class="offer-ladder" role="group" aria-label="Escada visual de ofertas">
+  <article><small>01</small><b>Entrada</b><p>Dor urgente, fácil de entender e baixa fricção de compra.</p><span>abre relacionamento</span></article>
+  <article><small>02</small><b>Principal</b><p>Oferta que resolve o problema central e sustenta o caixa.</p><span>paga a operação</span></article>
+  <article><small>03</small><b>Premium</b><p>Entrega estratégica, mais margem e maior transformação percebida.</p><span>eleva autoridade</span></article>
+  <article><small>04</small><b>Continuidade</b><p>Acompanhamento, governança, revisão e evolução mensal.</p><span>compra previsibilidade</span></article>
+</div>
+<div class="flow-panel compact-flow" role="group" aria-label="Fluxo de oferta">
+      <div class="flow-panel-head">
+        <span>Fluxo de oferta</span>
+        <strong>A venda certa prepara a próxima entrega</strong>
+      </div>
+      <div class="flow-chain" style="--steps:4">
+        <article class="flow-step neutral">
+          <span class="flow-index">01</span>
+          <small>Diagnóstico</small>
+          <strong>Entender a dor</strong>
+          <p>Separar curiosidade de urgência real.</p>
+        </article><article class="flow-step income">
+          <span class="flow-index">02</span>
+          <small>Oferta</small>
+          <strong>Prometer o certo</strong>
+          <p>Vender resultado sem abrir escopo infinito.</p>
+        </article><article class="flow-step gold">
+          <span class="flow-index">03</span>
+          <small>Entrega</small>
+          <strong>Criar padrão</strong>
+          <p>Transformar execução em processo repetível.</p>
+        </article><article class="flow-step income">
+          <span class="flow-index">04</span>
+          <small>Expansão</small>
+          <strong>Aumentar valor</strong>
+          <p>Oferecer continuidade quando o risco permanece.</p>
+        </article>
+      </div>
+    </div>
+<div class="split-block">
+  <article><h3>Prateleira frágil</h3><p>Serviços soltos, preço por comparação, escopo aberto e entrega dependente do fundador.</p></article>
+  <article><h3>Prateleira inteligente</h3><p>Ofertas com papel claro no caixa, limites definidos, margem prevista e caminho natural de expansão.</p></article>
+</div>
+
+      </div>
+    </details>
+  </div>
+</section>
+<section class="guide-scene" id="cena-5">
+  <div class="wrap">
+    <details class="scene-card cc-5 reveal" >
+      <summary class="scene-summary">
+        <div class="scene-circle">05</div>
+        <div class="scene-copy">
+          <div class="scene-eyebrow"><span class="eyebrow-tag">Cena 05 · Entrega escalável</span><span class="scene-readtime"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>4 min</span></div>
+          <h2 class="scene-title">Serviço escalável não nasce pronto. <span class="gold">Ele é desenhado</span>.</h2>
+          <p class="scene-tagline">A entrega precisa dizer quem faz o quê, onde entra IA, onde entra humano e onde a prova fica registrada.</p>
+          <div class="scene-glance"><span class="glance-pill">Swimlane</span><span class="glance-pill">Humano no laço</span><span class="glance-pill">Padrão da casa</span></div>
+        </div>
+        <span class="scene-toggle-label">Expandir</span>
+        <span class="scene-toggle"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span>
+      </summary>
+      <div class="scene-body">
+        
+<p class="scene-lead">Serviço escalável não é serviço impessoal. É serviço com padrão suficiente para preservar qualidade mesmo quando a demanda cresce.</p>
+<div class="swimlane" role="group" aria-label="Fluxo de entrega por responsáveis">
+  <div class="lane-head">Cliente</div><div class="lane-head">Time</div><div class="lane-head">IA como infraestrutura</div><div class="lane-head">Fundador</div>
+  <div>Envia informações</div><div>Confere entrada</div><div>Organiza e classifica</div><div>Define regra estratégica</div>
+  <div>Valida contexto</div><div>Executa etapa padrão</div><div>Gera rascunho, resumo e alerta</div><div>Entra só no que muda o jogo</div>
+  <div>Recebe entrega clara</div><div>Registra prova</div><div>Atualiza histórico</div><div>Revisa indicadores</div>
+</div>
+<div class="flow-panel " role="group" aria-label="Fluxo de escala segura">
+      <div class="flow-panel-head">
+        <span>Fluxo de escala segura</span>
+        <strong>O fundador sai da tarefa e volta para a decisão</strong>
+      </div>
+      <div class="flow-chain" style="--steps:5">
+        <article class="flow-step neutral">
+          <span class="flow-index">01</span>
+          <small>Captura</small>
+          <strong>Entrada organizada</strong>
+          <p>O caso não começa no WhatsApp perdido.</p>
+        </article><article class="flow-step income">
+          <span class="flow-index">02</span>
+          <small>Triagem</small>
+          <strong>Classificação rápida</strong>
+          <p>A demanda cai no fluxo correto.</p>
+        </article><article class="flow-step gold">
+          <span class="flow-index">03</span>
+          <small>Produção</small>
+          <strong>Padrão de entrega</strong>
+          <p>Modelos, critérios e validação reduzem variação.</p>
+        </article><article class="flow-step warn">
+          <span class="flow-index">04</span>
+          <small>Revisão</small>
+          <strong>Humano no laço</strong>
+          <p>O erro caro passa por decisão humana.</p>
+        </article><article class="flow-step gold">
+          <span class="flow-index">05</span>
+          <small>Registro</small>
+          <strong>Prova e métrica</strong>
+          <p>O que foi feito vira histórico e gestão.</p>
+        </article>
+      </div>
+    </div>
+<div class="visual-note"><strong>Regra prática:</strong> IA só deve entrar onde já existe decisão desenhada. Antes disso, ela apenas deixa a bagunça mais rápida.</div>
+
+      </div>
+    </details>
+  </div>
+</section>
+<section class="guide-scene" id="cena-6">
+  <div class="wrap">
+    <details class="scene-card cc-6 reveal" >
+      <summary class="scene-summary">
+        <div class="scene-circle">06</div>
+        <div class="scene-copy">
+          <div class="scene-eyebrow"><span class="eyebrow-tag">Cena 06 · Método SI</span><span class="scene-readtime"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>5 min</span></div>
+          <h2 class="scene-title">O segredo não é automação. <span class="gold">É arquitetura inteligente</span>.</h2>
+          <p class="scene-tagline">A Super Inteligênc[IA] trabalha com sistemas vivos, integrados e blindados para criar escala segura em negócios de serviços.</p>
+          <div class="scene-glance"><span class="glance-pill">Escala segura</span><span class="glance-pill">Governança embarcada</span><span class="glance-pill">Método SI</span></div>
+        </div>
+        <span class="scene-toggle-label">Expandir</span>
+        <span class="scene-toggle"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span>
+      </summary>
+      <div class="scene-body">
+        
+<p class="scene-lead">A maioria do mercado vende velocidade. A Super Inteligênc[IA] vende estrutura, segurança e capacidade de crescer sem transformar o negócio em fábrica de risco.</p>
+<div class="compare-architecture" role="group" aria-label="Comparação entre escala frágil e escala segura">
+  <article class="fragile"><h3>Escala frágil</h3><div class="tower cracked"><span></span><span></span><span></span><span></span></div><p>Foco em acelerar tarefa. O risco fica no fim, quando o problema já aconteceu.</p></article>
+  <article class="secure"><h3>Escala segura</h3><div class="tower stable"><span></span><span></span><span></span><span></span></div><p>Foco em arquitetura inteligente. Regra, prova, decisão e governança entram no fluxo.</p></article>
+</div>
+<div class="question-grid" role="list" aria-label="Seis perguntas diagnósticas do método">
+  <article role="listitem"><b>01</b><p>Onde o risco entra?</p></article><article role="listitem"><b>02</b><p>Onde o risco vira prejuízo?</p></article><article role="listitem"><b>03</b><p>Qual decisão humana trava o sistema?</p></article><article role="listitem"><b>04</b><p>Qual regra eu consigo embutir no fluxo?</p></article><article role="listitem"><b>05</b><p>Que prova precisa ser registrada?</p></article><article role="listitem"><b>06</b><p>Que métrica precisa virar rotina?</p></article>
+</div>
+<div class="flow-panel " role="group" aria-label="Método SI">
+      <div class="flow-panel-head">
+        <span>Método SI</span>
+        <strong>Do fluxo solto à arquitetura inteligente</strong>
+      </div>
+      <div class="flow-chain" style="--steps:6">
+        <article class="flow-step neutral">
+          <span class="flow-index">01</span>
+          <small>Mapeamento</small>
+          <strong>Fluxo e atrito</strong>
+          <p>Mostra onde o crescimento vai quebrar.</p>
+        </article><article class="flow-step warn">
+          <span class="flow-index">02</span>
+          <small>Risco</small>
+          <strong>Invisível vira indicador</strong>
+          <p>O risco deixa de ser sensação.</p>
+        </article><article class="flow-step gold">
+          <span class="flow-index">03</span>
+          <small>Padrão</small>
+          <strong>Decisão vira regra</strong>
+          <p>A operação acelera sem perder critério.</p>
+        </article><article class="flow-step gold">
+          <span class="flow-index">04</span>
+          <small>Blindagem</small>
+          <strong>Prova por design</strong>
+          <p>Auditoria e defesa prontas antes do problema.</p>
+        </article><article class="flow-step income">
+          <span class="flow-index">05</span>
+          <small>Gestão</small>
+          <strong>Métrica vira rotina</strong>
+          <p>A gestão sai do palpite.</p>
+        </article><article class="flow-step gold">
+          <span class="flow-index">06</span>
+          <small>IA</small>
+          <strong>Motor de execução</strong>
+          <p>A IA deixa de ser improviso e vira infraestrutura.</p>
+        </article>
+      </div>
+    </div>
+<div class="subtle-cta">
+  <div><span>Leitura importante</span><strong>Não fazemos automação. Construímos arquitetura inteligente.</strong><p>Para advogados, isso aparece como Direito Embarcado. Para outros negócios de serviços, como Governança Embarcada. A lógica é a mesma: o certo acontece como padrão.</p></div>
+  <a class="secondary-link" href="https://wa.me/message/NSPS5ULND5FNP1" target="_blank" rel="noopener">Conversar sobre minha operação</a>
+</div>
+
+      </div>
+    </details>
+  </div>
+</section>
+<section class="guide-scene" id="cena-7">
+  <div class="wrap">
+    <details class="scene-card cc-1 reveal" >
+      <summary class="scene-summary">
+        <div class="scene-circle">07</div>
+        <div class="scene-copy">
+          <div class="scene-eyebrow"><span class="eyebrow-tag">Cena 07 · Ciclo fechado</span><span class="scene-readtime"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>3 min</span></div>
+          <h2 class="scene-title">O dia a dia muda assim: <span class="gold">margem vira rotina</span>.</h2>
+          <p class="scene-tagline">O negócio passa a revisar serviços, clientes, retrabalho, preço e uso de IA em ciclos curtos de decisão.</p>
+          <div class="scene-glance"><span class="glance-pill">Ritual semanal</span><span class="glance-pill">Checklist</span><span class="glance-pill">Métrica viva</span></div>
+        </div>
+        <span class="scene-toggle-label">Expandir</span>
+        <span class="scene-toggle"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span>
+      </summary>
+      <div class="scene-body">
+        
+<p class="scene-lead">O negócio melhora quando cria um ciclo semanal simples: vender, entregar, medir, corrigir e decidir. Sem esse ciclo, tudo vira sensação.</p>
+<div class="loop-visual" role="img" aria-label="Ciclo fechado de gestão com cinco etapas: vender, entregar, medir, corrigir e precificar.">
+  <article style="--a:0deg"><b>01</b><span>Vender</span></article>
+  <article style="--a:72deg"><b>02</b><span>Entregar</span></article>
+  <article style="--a:144deg"><b>03</b><span>Medir</span></article>
+  <article style="--a:216deg"><b>04</b><span>Corrigir</span></article>
+  <article style="--a:288deg"><b>05</b><span>Precificar</span></article>
+  <div class="loop-core">margem<br>em ciclo</div>
+</div>
+<div class="flow-panel " role="group" aria-label="Ritual semanal">
+      <div class="flow-panel-head">
+        <span>Ritual semanal</span>
+        <strong>A reunião que protege dinheiro e energia</strong>
+      </div>
+      <div class="flow-chain" style="--steps:5">
+        <article class="flow-step income">
+          <span class="flow-index">01</span>
+          <small>Serviços</small>
+          <strong>O que deu lucro?</strong>
+          <p>Separar caixa bom de caixa tóxico.</p>
+        </article><article class="flow-step warn">
+          <span class="flow-index">02</span>
+          <small>Clientes</small>
+          <strong>Quem consumiu margem?</strong>
+          <p>Ver quem exigiu exceções demais.</p>
+        </article><article class="flow-step danger">
+          <span class="flow-index">03</span>
+          <small>Entrega</small>
+          <strong>Onde houve retrabalho?</strong>
+          <p>Corrigir causa, não sintoma.</p>
+        </article><article class="flow-step gold">
+          <span class="flow-index">04</span>
+          <small>Preço</small>
+          <strong>O que precisa subir?</strong>
+          <p>Preço acompanha risco e esforço.</p>
+        </article><article class="flow-step gold">
+          <span class="flow-index">05</span>
+          <small>IA</small>
+          <strong>O que pode virar sistema?</strong>
+          <p>Automatizar só o que já tem regra.</p>
+        </article>
+      </div>
+    </div>
+<div class="check-tool" aria-labelledby="check-title">
+  <h3 id="check-title">Checklist de maturidade da margem</h3>
+  <p>Marque o que já existe hoje na sua operação.</p>
+  <div id="maturityList" class="check-list">
+    <label><input type="checkbox" name="maturity" value="1"><span>Separo dinheiro pessoal do dinheiro do negócio</span></label><label><input type="checkbox" name="maturity" value="2"><span>Sei a margem média de cada serviço</span></label><label><input type="checkbox" name="maturity" value="3"><span>Tenho escopo claro nas propostas</span></label><label><input type="checkbox" name="maturity" value="4"><span>Registro horas e retrabalho</span></label><label><input type="checkbox" name="maturity" value="5"><span>Tenho ofertas organizadas por papel no caixa</span></label><label><input type="checkbox" name="maturity" value="6"><span>Tenho fluxo de entrega documentado</span></label><label><input type="checkbox" name="maturity" value="7"><span>Uso IA dentro de processos definidos</span></label><label><input type="checkbox" name="maturity" value="8"><span>Tenho revisão semanal de margem e capacidade</span></label>
+  </div>
+  <div class="check-meter" aria-live="polite"><span id="maturityBar"></span></div>
+  <p id="maturityText" class="meter-text">Marque os itens para ver o estágio atual.</p>
+</div>
+
+      </div>
+    </details>
+  </div>
+</section>
+<section class="guide-scene" id="cena-8">
+  <div class="wrap">
+    <details class="scene-card cc-6 reveal" >
+      <summary class="scene-summary">
+        <div class="scene-circle">08</div>
+        <div class="scene-copy">
+          <div class="scene-eyebrow"><span class="eyebrow-tag">Cena 08 · Plano de ação</span><span class="scene-readtime"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>3 min</span></div>
+          <h2 class="scene-title">Clareza vale mais que correria. <span class="gold">Comece por 7 dias</span>.</h2>
+          <p class="scene-tagline">Um plano simples para sair da sensação e enxergar onde o negócio precisa de preço, processo, governança ou arquitetura.</p>
+          <div class="scene-glance"><span class="glance-pill">7 dias</span><span class="glance-pill">Próximo passo</span><span class="glance-pill">Manifesto final</span></div>
+        </div>
+        <span class="scene-toggle-label">Expandir</span>
+        <span class="scene-toggle"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span>
+      </summary>
+      <div class="scene-body">
+        
+<p class="scene-lead">Este plano não resolve a empresa inteira. Ele muda o ponto de partida: você deixa de decidir por ansiedade e passa a decidir por evidência.</p>
+<div class="timeline-grid" role="list" aria-label="Plano visual de sete dias">
+  <article role="listitem"><small>Dia 1</small><b>Listar ofertas</b><p>Coloque todos os serviços no papel, sem filtro.</p></article><article role="listitem"><small>Dia 2</small><b>Calcular esforço</b><p>Estime horas, custo e retrabalho.</p></article><article role="listitem"><small>Dia 3</small><b>Identificar vazamentos</b><p>Separe os serviços que dão caixa dos que dão margem.</p></article><article role="listitem"><small>Dia 4</small><b>Reorganizar prateleira</b><p>Defina entrada, principal, premium e continuidade.</p></article><article role="listitem"><small>Dia 5</small><b>Desenhar entrega</b><p>Transforme o serviço mais importante em fluxo visual.</p></article><article role="listitem"><small>Dia 6</small><b>Marcar IA possível</b><p>Aponte onde resumo, triagem, revisão e registro podem virar sistema.</p></article><article role="listitem"><small>Dia 7</small><b>Decidir a próxima ação</b><p>Manter, corrigir, subir preço, pausar ou pedir ajuda.</p></article>
+</div>
+<div class="flow-panel compact-flow" role="group" aria-label="Próximo passo">
+      <div class="flow-panel-head">
+        <span>Próximo passo</span>
+        <strong>Quando procurar ajuda externa</strong>
+      </div>
+      <div class="flow-chain" style="--steps:4">
+        <article class="flow-step income">
+          <span class="flow-index">01</span>
+          <small>Sintoma</small>
+          <strong>Você vende bem</strong>
+          <p>A demanda existe e o mercado responde.</p>
+        </article><article class="flow-step warn">
+          <span class="flow-index">02</span>
+          <small>Limite</small>
+          <strong>A entrega pesa</strong>
+          <p>O crescimento começa a roubar margem e energia.</p>
+        </article><article class="flow-step danger">
+          <span class="flow-index">03</span>
+          <small>Risco</small>
+          <strong>A operação improvisa</strong>
+          <p>O padrão depende de pessoas específicas.</p>
+        </article><article class="flow-step gold">
+          <span class="flow-index">04</span>
+          <small>Virada</small>
+          <strong>Arquitetura inteligente</strong>
+          <p>A empresa redesenha fluxo, prova, regra e IA.</p>
+        </article>
+      </div>
+    </div>
+<div class="manifest-block">
+  <p>Documento é commodity.</p>
+  <strong>Automação é commodity.</strong>
+  <em>Arquitetura Super Inteligente vale ouro.</em>
+</div>
+
+      </div>
+    </details>
+  </div>
+</section>
+<section class="faq-section" aria-labelledby="faq-title"><div class="wrap"><h2 id="faq-title" class="faq-title">Perguntas que aparecem quando a conta fica séria</h2><div class="faq-item"><button class="faq-q" type="button">Funciona para quem não é advogado? <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a"><div><p>Sim. A lógica vale para qualquer negócio de serviços: consultorias, agências, clínicas, contabilidades, engenharia, arquitetura, educação, tecnologia e operações B2B. O que muda é o vocabulário do risco. A engenharia é a mesma.</p></div></div></div><div class="faq-item"><button class="faq-q" type="button">Preciso ter equipe grande para aplicar? <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a"><div><p>Não. Quanto menor a operação, mais importante desenhar padrão cedo. O objetivo é impedir que o fundador vire o único caminho possível para vender, entregar, revisar e resolver urgência.</p></div></div></div><div class="faq-item"><button class="faq-q" type="button">A IA resolve a margem baixa? <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a"><div><p>Sozinha, não. IA em processo ruim acelera retrabalho. IA em arquitetura inteligente reduz fricção, organiza informação, apoia decisão, registra prova e libera pessoas das tarefas repetitivas.</p></div></div></div><div class="faq-item"><button class="faq-q" type="button">Quando faz sentido pedir ajuda da SI? <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a"><div><p>Quando o negócio já tem demanda, mas a entrega depende demais de pessoas-chave, o preço não reflete esforço real, o retrabalho cresceu ou a IA está sendo usada de forma solta. Esse é o momento de redesenhar a operação.</p></div></div></div></div></section>
+<section class="cta-final"><div class="wrap"><div class="cta-box"><h2>Antes de vender mais, descubra o que merece escala.</h2><p>Se este guia deixou claro que o problema não é apenas captação, mas margem, processo, risco e arquitetura, converse com a equipe da Super Inteligênc[IA].</p><a class="primary-btn" href="https://wa.me/message/NSPS5ULND5FNP1" target="_blank" rel="noopener">Falar com a equipe</a></div></div></section>
+<section class="expert-section" aria-labelledby="expert-title"><div class="wrap"><div class="expert-card"><div class="expert-photo" style="background-image:url('marcilio-especialista.png')" role="img" aria-label="Marcílio Guedes Drummond"></div><div class="expert-info"><h2 id="expert-title">Conheça o especialista</h2><p>Marcílio Guedes Drummond é advogado, empresário, fundador da Super Inteligênc[IA] e criador de métodos de IA, gestão, arquitetura de serviços e negócios inteligentes para o mercado jurídico e empresarial.</p><div class="tags"><span>Design de Serviços e Produtos pelo MIT</span><span>Mentor Sebrae Nacional</span><span>Autor de 14 livros</span><span>Reconhecido pela FGV</span></div><div class="stats"><span>+460k audiência</span><span>+160k no YouTube</span><span>+100k clientes</span><span>+R$ 1,5 bi em valor gerado</span></div></div></div></div></section>
+</main>
+<footer class="footer"><div class="wrap"><div class="footer-social"><a href="https://www.youtube.com/@SuperInteligencIAOficial" target="_blank" rel="noopener">YouTube</a><a href="https://www.instagram.com/marcilio.drummond/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/marcilioguedesdrummond/" target="_blank" rel="noopener">LinkedIn</a><a href="https://site.superinteligencia.org/" target="_blank" rel="noopener">Site</a></div><div class="footer-legal"><a href="https://site.superinteligencia.org/legal/termos-de-uso" target="_blank" rel="noopener">Termos de Uso</a><span class="footer-sep">·</span><a href="https://portfoliotech.superinteligencia.org/politica-corporativa" target="_blank" rel="noopener">Política de Privacidade</a><span class="footer-sep">·</span><a href="https://portfoliotech.superinteligencia.org/politica-uso-ia" target="_blank" rel="noopener">Política de Uso de IA</a><span class="footer-sep">·</span><a href="https://portfoliotech.superinteligencia.org/" target="_blank" rel="noopener">Portfólio</a></div><div>© Super Inteligênc[IA] · Todos os direitos reservados.</div></div></footer>
+<button class="scroll-top" id="scrollTop" type="button" aria-label="Voltar ao topo"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 15l6-6 6 6"/></svg></button><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="exit-overlay" id="exitPopup" role="dialog" aria-modal="true" aria-labelledby="exitTitle" aria-hidden="true"><div class="exit-modal"><button class="modal-close" id="exitClose" type="button" aria-label="Fechar aviso">×</button><h2 id="exitTitle">A conta ficou clara?</h2><p>Antes de voltar para a rotina, leve essa pergunta: qual serviço hoje parece bom no caixa, mas ruim na margem?</p><a class="primary-btn" href="https://wa.me/message/NSPS5ULND5FNP1" target="_blank" rel="noopener">Conversar com a equipe</a></div></div>
+<script>
+(function(){
+  var doc=document.documentElement;var prog=document.getElementById('prog');var toast=document.getElementById('toast');var money=new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'});var pct=new Intl.NumberFormat('pt-BR',{maximumFractionDigits:1});
+  function onScroll(){var h=document.body.scrollHeight-window.innerHeight;prog.style.width=h>0?Math.min(window.scrollY/h*100,100)+'%':'0%';document.getElementById('scrollTop').classList.toggle('show',window.scrollY>620)}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  function showToast(msg){toast.textContent=msg;toast.classList.add('show');window.clearTimeout(showToast.t);showToast.t=window.setTimeout(function(){toast.classList.remove('show')},3200)}
+  var revealObs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');revealObs.unobserve(e.target)}})},{threshold:.12});document.querySelectorAll('.reveal').forEach(function(el){revealObs.observe(el)});
+  function updateLabels(){document.querySelectorAll('.scene-card').forEach(function(card){var label=card.querySelector('.scene-toggle-label');if(label){label.textContent=card.open?'Recolher':'Expandir'}})}
+  updateLabels();document.querySelectorAll('.scene-card').forEach(function(card){card.addEventListener('toggle',updateLabels)});
+  document.getElementById('expandAll').addEventListener('click',function(){document.querySelectorAll('.scene-card').forEach(function(card){card.open=true});updateLabels();showToast('Todas as cenas foram abertas')});
+  document.getElementById('collapseAll').addEventListener('click',function(){document.querySelectorAll('.scene-card').forEach(function(card){card.open=false});updateLabels();document.getElementById('cena-1').scrollIntoView({behavior:'smooth',block:'start'});showToast('Cenas recolhidas')});
+  document.querySelectorAll('.toc-pill[href^="#cena"]').forEach(function(link){link.addEventListener('click',function(ev){ev.preventDefault();var target=document.querySelector(link.getAttribute('href'));if(!target)return;var card=target.querySelector('.scene-card');if(card){card.open=true;updateLabels()}window.setTimeout(function(){target.scrollIntoView({behavior:'smooth',block:'start'})},50)})});
+  var form=document.getElementById('marginForm');var err=document.getElementById('calcError');var result=document.getElementById('marginResult');
+  form.addEventListener('submit',function(ev){ev.preventDefault();err.hidden=true;var price=Number(document.getElementById('price').value);var cost=Number(document.getElementById('cost').value);var hours=Number(document.getElementById('hours').value);var rework=Number(document.getElementById('rework').value)||0;if(!price||price<=0||!hours||hours<=0){err.textContent='Preencha pelo menos preço cobrado e horas totais com valores maiores que zero.';err.hidden=false;document.getElementById('price').focus();return}var profit=price-cost-rework;var margin=profit/price*100;var hour=profit/hours;var verdict='Crítico';var advice='O serviço parece consumir margem. Revise escopo, preço e retrabalho antes de vender novamente.';if(margin>=45){verdict='Saudável';advice='Há margem para escalar, desde que a entrega tenha padrão, prova e controle de qualidade.'}else if(margin>=25){verdict='Atenção';advice='A oferta pode funcionar, mas precisa de ajuste de preço, escopo ou processo para não virar gargalo.'}document.getElementById('outProfit').textContent=money.format(profit);document.getElementById('outMargin').textContent=pct.format(margin)+'%';document.getElementById('outHour').textContent=money.format(hour);document.getElementById('outVerdict').textContent=verdict;document.getElementById('outAdvice').textContent=advice;result.hidden=false;showToast('Margem calculada com sucesso')});
+  var checks=document.querySelectorAll('input[name="maturity"]');var bar=document.getElementById('maturityBar');var txt=document.getElementById('maturityText');function updateMaturity(){var total=checks.length;var done=[].filter.call(checks,function(c){return c.checked}).length;var score=Math.round(done/total*100);bar.style.width=score+'%';var label='Base frágil. Comece por escopo, margem e fluxo de entrega.';if(score>=75){label='Base forte. O próximo salto é transformar padrão em arquitetura inteligente.'}else if(score>=45){label='Base intermediária. Existem bons sinais, mas a margem ainda depende de disciplina operacional.'}txt.textContent=done+' de '+total+' itens marcados · '+label}checks.forEach(function(c){c.addEventListener('change',updateMaturity)});
+  document.querySelectorAll('.faq-q').forEach(function(btn){btn.addEventListener('click',function(){var item=btn.closest('.faq-item');item.classList.toggle('open')})});
+  document.getElementById('scrollTop').addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+  var popup=document.getElementById('exitPopup');var close=document.getElementById('exitClose');var fired=false;function openPopup(){if(fired||window.scrollY<900)return;fired=true;popup.style.display='flex';popup.classList.add('active');popup.setAttribute('aria-hidden','false');close.focus()}function closePopup(){popup.classList.remove('active');popup.setAttribute('aria-hidden','true');window.setTimeout(function(){popup.style.display='none'},180)}document.addEventListener('mouseout',function(e){if(e.clientY<5&&e.relatedTarget===null)openPopup()});var lastY=0,lastT=0;window.addEventListener('scroll',function(){var y=window.scrollY,t=Date.now();if(lastT&&y<lastY&&lastY-y>140&&t-lastT<260)openPopup();lastY=y;lastT=t},{passive:true});close.addEventListener('click',closePopup);popup.addEventListener('click',function(e){if(e.target===popup)closePopup()});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&popup.classList.contains('active'))closePopup()});
+})();
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

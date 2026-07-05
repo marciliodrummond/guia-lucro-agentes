@@ -1,0 +1,9 @@
+Guia HTML atualizado: Onde está o lucro na Era da IA para advogados e prestadores de serviços?
+
+Arquivo principal:
+- guia-lucro-era-ia-visual.html
+
+Como usar:
+1. Extraia o ZIP.
+2. Abra o arquivo HTML no navegador.
+3. Para publicar, envie o HTML para sua hospedagem ou app.
