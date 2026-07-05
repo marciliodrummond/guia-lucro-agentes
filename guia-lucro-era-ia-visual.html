@@ -49,6 +49,39 @@
   <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">  <!-- /SI mandatory assets -->
 <style id="si-ai-agentic-style">
+
+
+/* SI sector examples styles start */
+.si-sector-examples,
+.si-sector-examples *{box-sizing:border-box}
+.si-sector-examples{position:relative;overflow:hidden;padding:clamp(56px,8vw,92px) 0;background:
+radial-gradient(circle at 14% 0%,rgba(45,212,191,.14),transparent 28%),
+linear-gradient(180deg,rgba(8,13,18,.96),rgba(13,18,24,.98));color:#f7f3e8}
+.si-sector-examples::before{content:"";position:absolute;inset:0;background-image:
+linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px),
+linear-gradient(180deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(180deg,rgba(0,0,0,.45),transparent 70%);pointer-events:none}
+.si-sector-wrap{position:relative;z-index:1;width:min(1120px,calc(100% - 32px));margin:0 auto}
+.si-sector-kicker{display:inline-flex;align-items:center;gap:8px;margin:0 0 12px;padding:7px 10px;border:1px solid rgba(212,175,55,.42);border-radius:999px;color:#e8c766;background:rgba(212,175,55,.08);font:700 11px/1.1 Inter,system-ui,sans-serif;text-transform:uppercase;letter-spacing:.08em}
+.si-sector-title{max-width:900px;margin:0;color:#fff;font:800 clamp(28px,4vw,48px)/1.04 Inter,system-ui,sans-serif;letter-spacing:0}
+.si-sector-lead{max-width:860px;margin:18px 0 0;color:rgba(247,243,232,.78);font:400 clamp(16px,2vw,19px)/1.62 Inter,system-ui,sans-serif}
+.si-sector-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:28px}
+.si-sector-card{min-width:0;display:flex;flex-direction:column;gap:16px;padding:20px;border:1px solid rgba(255,255,255,.12);border-radius:8px;background:linear-gradient(180deg,rgba(255,255,255,.075),rgba(255,255,255,.035));box-shadow:0 22px 58px rgba(0,0,0,.28);overflow:hidden}
+.si-sector-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
+.si-sector-badge{flex:0 0 auto;display:grid;place-items:center;width:38px;height:38px;border-radius:8px;border:1px solid rgba(45,212,191,.36);background:rgba(45,212,191,.11);color:#7ee7d8;font:800 14px/1 Inter,system-ui,sans-serif}
+.si-sector-card h3{margin:0;color:#fff;font:800 21px/1.15 Inter,system-ui,sans-serif;letter-spacing:0}
+.si-sector-tag{display:inline-flex;align-items:center;white-space:nowrap;border:1px solid rgba(212,175,55,.36);border-radius:999px;padding:6px 8px;color:#f1d680;background:rgba(212,175,55,.08);font:700 11px/1 Inter,system-ui,sans-serif}
+.si-sector-label{margin:0 0 6px;color:#e8c766;font:800 11px/1 Inter,system-ui,sans-serif;text-transform:uppercase;letter-spacing:.06em}
+.si-sector-copy{margin:0;color:rgba(247,243,232,.82);font:400 15px/1.58 Inter,system-ui,sans-serif;overflow-wrap:anywhere}
+.si-sector-flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.si-sector-step{position:relative;min-width:0;padding:12px 10px;border-radius:8px;border:1px solid rgba(255,255,255,.1);background:rgba(2,6,12,.36);color:rgba(247,243,232,.86);font:700 13px/1.25 Inter,system-ui,sans-serif;text-align:center;overflow-wrap:anywhere}
+.si-sector-step span{display:block;margin-bottom:5px;color:#7ee7d8;font:800 10px/1 Inter,system-ui,sans-serif;text-transform:uppercase;letter-spacing:.06em}
+.si-sector-outcome{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:auto}
+.si-sector-outcome>div{min-width:0;padding:13px;border-radius:8px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.045)}
+.si-sector-note{margin-top:18px;padding:16px 18px;border:1px solid rgba(45,212,191,.25);border-radius:8px;background:rgba(45,212,191,.07);color:rgba(247,243,232,.82);font:700 14px/1.5 Inter,system-ui,sans-serif}
+@media (max-width:860px){.si-sector-grid{grid-template-columns:1fr}.si-sector-outcome{grid-template-columns:1fr}.si-sector-card{padding:18px}.si-sector-title{font-size:clamp(27px,8vw,40px)}}
+@media (max-width:560px){.si-sector-wrap{width:min(100% - 24px,1120px)}.si-sector-examples{padding:48px 0}.si-sector-card-head{display:grid;grid-template-columns:auto 1fr}.si-sector-tag{grid-column:1/-1;justify-content:center;white-space:normal;text-align:center}.si-sector-flow{grid-template-columns:1fr}.si-sector-step{text-align:left}.si-sector-card h3{font-size:20px}}
+/* SI sector examples styles end */
+
 /* SI solutions lab styles start */
 .skip-link:focus:not(:focus-visible){transform:translateY(-180%)!important}
 .si-solutions-lab{position:relative;z-index:2;margin:34px auto 48px;width:min(100% - 32px,1120px);border:1px solid rgba(226,192,116,.24);border-radius:8px;background:linear-gradient(135deg,rgba(9,13,18,.97),rgba(18,23,27,.95));box-shadow:0 26px 74px rgba(0,0,0,.32);overflow:hidden}
@@ -168,6 +201,122 @@
   </div>
 </section>
 <!-- SI solutions lab end -->
+<!-- SI sector examples start -->
+<section class="si-sector-examples reveal" id="exemplos-praticos-por-segmento" aria-labelledby="sector-examples-title">
+  <div class="si-sector-wrap">
+    <p class="si-sector-kicker">Aplicações por segmento</p>
+    <h2 class="si-sector-title" id="sector-examples-title">Exemplos práticos: onde a IA revela lucro escondido na operação.</h2>
+    <p class="si-sector-lead">Muita empresa de serviço parece ocupada, mas vende horas mal precificadas. Agentes ajudam a enxergar custo invisível, gargalo recorrente e cliente que consome margem sem aparecer no caixa.</p>
+    <div class="si-sector-grid">
+<article class="si-sector-card">
+  <div class="si-sector-card-head">
+    <div class="si-sector-badge" aria-hidden="true">JU</div>
+    <div><h3>Tese repetitiva com margem real</h3></div>
+    <span class="si-sector-tag">Jurídico</span>
+  </div>
+  <div>
+    <p class="si-sector-label">Cena real</p>
+    <p class="si-sector-copy">O escritório produz peças semelhantes, mas não sabe quais casos geram lucro depois de reunião, revisão, diligência, mensagem e pós-venda.</p>
+  </div>
+  <div class="si-sector-flow" aria-label="Fluxo visual com IA">
+    <div class="si-sector-step"><span>Entrada</span>Timesheet, CRM e peças</div>
+    <div class="si-sector-step"><span>Agente</span>Agente mede retrabalho, urgência e etapa</div>
+    <div class="si-sector-step"><span>Resultado</span>Preço por complexidade e margem</div>
+  </div>
+  <div class="si-sector-outcome">
+    <div>
+      <p class="si-sector-label">Ganho tangível</p>
+      <p class="si-sector-copy">Pacotes jurídicos deixam de ser baseados em intuição e passam a refletir esforço operacional.</p>
+    </div>
+    <div>
+      <p class="si-sector-label">Piloto recomendado</p>
+      <p class="si-sector-copy">Mapa de margem por área, cliente e tipo de entrega com alerta de casos deficitários.</p>
+    </div>
+  </div>
+</article>
+<article class="si-sector-card">
+  <div class="si-sector-card-head">
+    <div class="si-sector-badge" aria-hidden="true">CO</div>
+    <div><h3>BPO barato que drena equipe</h3></div>
+    <span class="si-sector-tag">Contabilidade</span>
+  </div>
+  <div>
+    <p class="si-sector-label">Cena real</p>
+    <p class="si-sector-copy">Clientes pagam mensalidade baixa, mas abrem tickets, enviam documentos atrasados e exigem explicações fora do escopo contratado.</p>
+  </div>
+  <div class="si-sector-flow" aria-label="Fluxo visual com IA">
+    <div class="si-sector-step"><span>Entrada</span>Tickets, obrigações e horas</div>
+    <div class="si-sector-step"><span>Agente</span>Agente classifica exceções e consumo</div>
+    <div class="si-sector-step"><span>Resultado</span>Ranking de clientes por margem</div>
+  </div>
+  <div class="si-sector-outcome">
+    <div>
+      <p class="si-sector-label">Ganho tangível</p>
+      <p class="si-sector-copy">Renegociação de pacotes com prova e decisão melhor sobre manter, reajustar ou encerrar contas.</p>
+    </div>
+    <div>
+      <p class="si-sector-label">Piloto recomendado</p>
+      <p class="si-sector-copy">Painel de margem por carteira com agente que sugere reajuste, escopo ou automação.</p>
+    </div>
+  </div>
+</article>
+<article class="si-sector-card">
+  <div class="si-sector-card-head">
+    <div class="si-sector-badge" aria-hidden="true">IM</div>
+    <div><h3>Visita improdutiva custa caro</h3></div>
+    <span class="si-sector-tag">Imobiliária</span>
+  </div>
+  <div>
+    <p class="si-sector-label">Cena real</p>
+    <p class="si-sector-copy">A imobiliária mede leads e visitas, mas não enxerga custo por proposta real nem quais canais geram interessados sem capacidade.</p>
+  </div>
+  <div class="si-sector-flow" aria-label="Fluxo visual com IA">
+    <div class="si-sector-step"><span>Entrada</span>Portais, CRM e agenda</div>
+    <div class="si-sector-step"><span>Agente</span>Agente mede canal, perfil e conversão</div>
+    <div class="si-sector-step"><span>Resultado</span>Foco em imóveis e leads rentáveis</div>
+  </div>
+  <div class="si-sector-outcome">
+    <div>
+      <p class="si-sector-label">Ganho tangível</p>
+      <p class="si-sector-copy">Menos deslocamento improdutivo e mais energia comercial nos imóveis com maior chance de fechamento.</p>
+    </div>
+    <div>
+      <p class="si-sector-label">Piloto recomendado</p>
+      <p class="si-sector-copy">Score de lead e imóvel com custo por visita, custo por proposta e alerta de canal fraco.</p>
+    </div>
+  </div>
+</article>
+<article class="si-sector-card">
+  <div class="si-sector-card-head">
+    <div class="si-sector-badge" aria-hidden="true">SA</div>
+    <div><h3>Agenda cheia, lucro baixo</h3></div>
+    <span class="si-sector-tag">Saúde</span>
+  </div>
+  <div>
+    <p class="si-sector-label">Cena real</p>
+    <p class="si-sector-copy">A clínica tem movimento, mas convênios, glosas, encaixes e no-show reduzem o resultado sem aparecer claramente para o gestor.</p>
+  </div>
+  <div class="si-sector-flow" aria-label="Fluxo visual com IA">
+    <div class="si-sector-step"><span>Entrada</span>Agenda, financeiro e convênio</div>
+    <div class="si-sector-step"><span>Agente</span>Agente cruza repasse, falta e glosa</div>
+    <div class="si-sector-step"><span>Resultado</span>Mix de agenda mais rentável</div>
+  </div>
+  <div class="si-sector-outcome">
+    <div>
+      <p class="si-sector-label">Ganho tangível</p>
+      <p class="si-sector-copy">Decisão melhor sobre horários, serviços, convênios e campanhas sem depender de achismo.</p>
+    </div>
+    <div>
+      <p class="si-sector-label">Piloto recomendado</p>
+      <p class="si-sector-copy">Radar de margem por procedimento, profissional, convênio e horário.</p>
+    </div>
+  </div>
+</article>
+    </div>
+    <div class="si-sector-note">O objetivo é tornar a margem visível antes de contratar mais gente, comprar mais ferramentas ou aceitar mais demanda ruim.</div>
+  </div>
+</section>
+<!-- SI sector examples end -->
 
 <section class="guide-scene" id="cena-1">
   <div class="wrap">
@@ -708,7 +857,7 @@
 </section>
 <section class="faq-section" aria-labelledby="faq-title"><div class="wrap"><h2 id="faq-title" class="faq-title">Perguntas que aparecem quando a conta fica séria</h2><div class="faq-item"><button class="faq-q" type="button">Funciona para quem não é advogado? <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a"><div><p>Sim. A lógica vale para qualquer negócio de serviços: consultorias, agências, clínicas, contabilidades, engenharia, arquitetura, educação, tecnologia e operações B2B. O que muda é o vocabulário do risco. A engenharia é a mesma.</p></div></div></div><div class="faq-item"><button class="faq-q" type="button">Preciso ter equipe grande para aplicar? <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a"><div><p>Não. Quanto menor a operação, mais importante desenhar padrão cedo. O objetivo é impedir que o fundador vire o único caminho possível para vender, entregar, revisar e resolver urgência.</p></div></div></div><div class="faq-item"><button class="faq-q" type="button">A IA resolve a margem baixa? <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a"><div><p>Sozinha, não. IA em processo ruim acelera retrabalho. IA em arquitetura inteligente reduz fricção, organiza informação, apoia decisão, registra prova e libera pessoas das tarefas repetitivas.</p></div></div></div><div class="faq-item"><button class="faq-q" type="button">Quando faz sentido pedir ajuda da SI? <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a"><div><p>Quando o negócio já tem demanda, mas a entrega depende demais de pessoas-chave, o preço não reflete esforço real, o retrabalho cresceu ou a IA está sendo usada de forma solta. Esse é o momento de redesenhar a operação.</p></div></div></div></div></section>
 <section class="cta-final"><div class="wrap"><div class="cta-box"><h2>Antes de vender mais, descubra o que merece escala.</h2><p>Se este guia deixou claro que o problema não é apenas captação, mas margem, processo, risco e arquitetura, converse com a equipe da Super Inteligênc[IA].</p><a class="primary-btn" href="https://wa.me/message/NSPS5ULND5FNP1" target="_blank" rel="noopener">Falar com a equipe</a></div></div></section>
-<section class="expert-section" aria-labelledby="expert-title"><div class="wrap"><div class="expert-card"><div class="expert-photo" style="background-image:url('marcilio-especialista.png')" role="img" aria-label="Marcílio Guedes Drummond"></div><div class="expert-info"><h2 id="expert-title">Conheça o especialista</h2><p>Marcílio Guedes Drummond é advogado, empresário, fundador da Super Inteligênc[IA] e criador de métodos de IA, gestão, arquitetura de serviços e negócios inteligentes para o mercado jurídico e empresarial.</p><div class="tags"><span>Design de Serviços e Produtos pelo MIT</span><span>Mentor Sebrae Nacional</span><span>Autor de 14 livros</span><span>Reconhecido pela FGV</span></div><div class="stats"><span>+460k audiência</span><span>+160k no YouTube</span><span>+100k clientes</span><span>+R$ 1,5 bi em valor gerado</span></div></div></div></div></section>
+<section class="expert-section" aria-labelledby="expert-title"><div class="wrap"><div class="expert-card"><div class="expert-photo" style="background-image:url('marcilio-especialista.png')" role="img" aria-label="Marcílio Guedes Drummond"></div><div class="expert-info"><h2 id="expert-title">Conheça o especialista</h2><p>Marcílio Guedes Drummond é advogado, empresário, fundador da Super Inteligênc[IA] e criador de métodos de IA, gestão, arquitetura de serviços e negócios inteligentes para o mercado jurídico e empresarial.</p><div class="tags"><span>Design de Serviços e Produtos pelo MIT</span><span>Mentor Sebrae Nacional</span><span>Autor de 14 livros</span><span>Reconhecido pela FGV</span></div><div class="stats"><span>+460k audiência</span><span>+190k no YouTube</span><span>+100k clientes</span><span>+R$ 1,5 bi em valor gerado</span></div></div></div></div></section>
 </main>
 <footer class="footer"><div class="wrap"><div class="footer-social"><a href="https://www.youtube.com/@SuperInteligencIAOficial" target="_blank" rel="noopener">YouTube</a><a href="https://www.instagram.com/marcilio.drummond/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/marcilioguedesdrummond/" target="_blank" rel="noopener">LinkedIn</a><a href="https://site.superinteligencia.org/" target="_blank" rel="noopener">Site</a></div><div class="footer-legal"><a href="https://site.superinteligencia.org/legal/termos-de-uso" target="_blank" rel="noopener">Termos de Uso</a><span class="footer-sep">·</span><a href="https://portfoliotech.superinteligencia.org/politica-corporativa" target="_blank" rel="noopener">Política de Privacidade</a><span class="footer-sep">·</span><a href="https://portfoliotech.superinteligencia.org/politica-uso-ia" target="_blank" rel="noopener">Política de Uso de IA</a><span class="footer-sep">·</span><a href="https://portfoliotech.superinteligencia.org/" target="_blank" rel="noopener">Portfólio</a></div><div>© Super Inteligênc[IA] · Todos os direitos reservados.</div></div></footer>
 <button class="scroll-top" id="scrollTop" type="button" aria-label="Voltar ao topo"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 15l6-6 6 6"/></svg></button><div class="toast" id="toast" role="status" aria-live="polite"></div>
